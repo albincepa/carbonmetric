@@ -6,7 +6,7 @@ This codebase was created to demonstrate a backend application built with Spring
 
 The application uses Spring Boot and InfluxDB.
 
-* Use the idea timeseries DB to store the important metrics
+* Use the idea of timeseries DB to store the important metrics
 * Use [Finite State Machine](https://en.wikipedia.org/wiki/Finite-state_machine) for tracking the current state of sensors.
 
 And the code is organized as this:
@@ -22,6 +22,10 @@ And the code is organized as this:
 # Database
 
 As the application is very write heavy it was decided to use a time series DB. InfluxDB offers a reasonable benchmark scoring. For local testing a `docker-compose` file is included. The properties are currently hard-coded in `docker-compose` file and  `application.properties`.
+
+# State Management
+
+![State Management](statemanagement.jpg "State and Event Management")
 
 # Getting started
 
